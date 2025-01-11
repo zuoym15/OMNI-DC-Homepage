@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OMNI-DC: Towards Highly Robust Depth Completion</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://zuoym15.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://github.com/princeton-vl/OGNI-DC">
+            OGNI-DC
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">OMNI-DC: Towards Highly Robust Depth Completion</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://zuoym15.github.io/">Yiming Zuo</a></span>,
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/liu-willow-yang-787b82210/">Willow Yang</a></span>,
+            <span class="author-block">
+              <a href="https://mazeyu.github.io/">Zeyu Ma</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.cs.princeton.edu/~jiadeng/">Jia Deng</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://pvl.cs.princeton.edu/">Princeton Vision & Learning Lab, Princeton University</a></span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/pdf/2411.19278"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <!-- Arxiv Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2411.19278"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/princeton-vl/OMNI-DC"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h3 class="title is-3">TL;DR</h3>
+          <div class="content has-text-justified">
+            <p>
+              Depth completion (DC) aims to predict a dense depth map from an RGB image
+               and sparse depth observations. Existing methods for DC generalize poorly on
+                new datasets or unseen sparse depth patterns, limiting their practical 
+                applications. We propose OMNI-DC, a highly robust DC model that generalizes 
+                well across various scenarios. Our method incorporates several novel designs in 
+                the model architecture and loss functions and can deal with sparse depth maps of 
+                varying densities. Moreover, we train OMNI-DC on a mixture of synthetic datasets 
+                with a scale normalization technique. To evaluate our model, we establish a new evaluation 
+                protocol named Robust-DC for zero-shot testing under various sparse depth patterns. 
+                Experimental results on Robust-DC and conventional benchmarks show that OMNI-DC
+                significantly outperforms all baselines.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+      <img src="./static/images/teaser.jpg"
+      width="100%"
+      class="interpolation-image"
+      alt="Interpolation end reference image."/>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">How It Works</h2>
+        <h3 class="title is-4">Optimization-Inspired Framework</h3>
+        <div class="content has-text-justified">
+          <img src="./static/images/pipeline.png"
+          width="100%"
+          class="interpolation-image"
+          alt="Interpolation end reference image."/>
+          <p>
+           Our model builds on top of OGNI-DC but introduces a novel multi-resolution differentiable depth integration layer (Multi-res DDI) to allow explicit modeling of long-range depth relationships. We
+           train OMNI-DC on 5 large-scale synthetic datasets, covering indoor, outdoor, and urban scenes, with diverse depth patterns. Finally, we use a probability-based Laplacian loss to model the depth uncertainty during training.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gallery-container">
+  <div class="gallery">
+      <!-- Images will be inserted here by JavaScript -->
+  </div>
+</div>
+
+<div class="paginated-gallery-container">
+</div>
+
+<!-- Placeholder -->
+
+<div class="citation-block">
+  <h2>Citation</h2>
+  <pre>
+    @article{zuo2024omni,
+      title={OMNI-DC: Highly Robust Depth Completion with Multiresolution Depth Integration},
+      author={Zuo, Yiming and Yang, Willow and Ma, Zeyu and Deng, Jia},
+      journal={arXiv preprint arXiv:2411.19278},
+      year={2024}
+   }
+  </pre>
+</div>
+
+<!-- Placeholder -->
+
+<footer class="footer">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Website template based on <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> and licensed under <a rel="license"
+            href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA-4.0</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+</body>
+</html>

@@ -414,7 +414,7 @@ $(document).ready(function() {
         bottomImages: [
             // Add your wide gallery images here
             {
-              before: './static/images/pic11OGNIDC.png',
+              before: './static/images/pic11ognidc.png',
               after: './static/images/pic11ours.png',
               beforeLabel: 'OGNI-DC',
               afterLabel: 'Ours',

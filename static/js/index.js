@@ -341,7 +341,7 @@ $(document).ready(function() {
                 afterLabel: 'Ours'
             },
             {
-                before: './static/images/pic4OGNIDC.png',
+                before: './static/images/pic4ognidc.png',
                 after: './static/images/pic4ours.png',
                 beforeLabel: 'OGNI-DC',
                 afterLabel: 'Ours'
